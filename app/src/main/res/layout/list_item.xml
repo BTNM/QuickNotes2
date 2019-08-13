@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Title for note"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toStartOf="@id/rightSideLayout"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:text="12082019"
+        />
+
+    <ImageView
+        android:id="@+id/image_typeIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_view_title"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/ic_note_color" />
+
+    <TextView
+        android:id="@+id/text_view_typeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_title"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/image_typeIcon"
+        android:paddingTop="10dp"
+        android:text="type icon text"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_typeIcon"
+        android:layout_margin="5dp"
+        android:text="Test text for notes so takes up a lot of space, so we can check how it works" />
+
+    <LinearLayout
+        android:id="@+id/rightSideLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/image_colorIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+
+            android:src="@drawable/ic_color" />
+
+        <ImageView
+            android:id="@+id/image_deleteIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+
+            android:src="@drawable/ic_delete" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
